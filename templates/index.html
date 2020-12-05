@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Car Price Predictor</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_second">Car Price Prediction</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Prediction Area -->
+        <div class="prediction-area">
+
+            <!-- Prediction Form -->
+            <div class='div2'>
+                <form action="{{ url_for('predict') }}" method="POST">
+                    <!-- Car Brand Dropdown -->
+                    <select class="form-input align-center" name="car-brand">
+                        <option value="none">--- Select a Car Brand---</option>
+                        <option value="name_Maruti">Maruti</option>
+                        <option value="name_Hyundai">Hyundai</option>
+                        <option value="name_Mahindra">Mahindra</option>
+                        <option value="name_Tata">Tata</option>
+                        <option value="name_Honda">Honda</option>
+                        <option value="name_Ford">Ford</option>
+                        <option value="name_Toyota">Toyota</option>
+
+                        
+                    </select><br>
+                    <!-- Fuel Type Dropdown -->
+                    <select class="form-input align-center" name="fuel-type">
+                        <option value="none">--- Select the fuel type ---</option>
+                        <option value="fuel_Diesel">Diesel</option>
+                        <option value="fuel_Petrol">Petrol</option>
+                        
+                    </select><br>
+                    <!-- Transmission Type Dropdown -->
+                    <select class="form-input align-center" name="transmission-type">
+                        <option value="none">--- Select the transmission type ---</option>
+                        <option value="transmission_Automatic">Automatic</option>
+                        <option value="transmission_Manual">Manual</option>
+                        
+                    </select><br>
+                    <!-- Seller Type Dropdown -->
+                    <select class="form-input align-center" name="seller-type">
+                        <option value="none">--- Select the seller type ---</option>
+                        <option value="seller_type_Dealer">Dealer</option>
+                        <option value="seller_type_Individual">Individual</option>
+                        
+                    </select><br>
+                    <!-- Owner Type Dropdown -->
+                    <select class="form-input align-center" name="owner-type">
+                        <option value="none">--- Select the owner type ---</option>
+                        <option value="owner_First Owner">First Owner</option>
+                        <option value="owner_Second Owner">Second Owner</option>
+                        <option value="owner_Third Owner">Third Owner</option>
+                        
+                    </select><br>
+                    <input class="form-input" type="text" name="year" placeholder="year eg. 2016"><br>
+                    <input class="form-input" type="text" name="km_driven" placeholder="km driven eg. 22000"><br>
+                    
+
+			<input type="submit" class="myButton" value="Predict Price">
+        	</form>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/anshul3375"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/anshul-agarwal-73174ab8/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Made by Anshul Agarwal.</p>
+       </div>
+
+    </body>
+</html>
