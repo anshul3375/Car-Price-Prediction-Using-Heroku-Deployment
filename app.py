@@ -25,19 +25,19 @@ def predict():
     if request.method == 'POST':
         
         car_brand = request.form['car-brand']
-        if car_brand == 'Maruti':
+        if car_brand == 'name_Maruti':
             brand_array = brand_array + [1,0,0,0,0,0,0]
-        elif car_brand == 'Hyundai':
+        elif car_brand == 'name_Hyundai':
             brand_array = brand_array + [0,1,0,0,0,0,0]
-        elif car_brand == 'Mahindra':
+        elif car_brand == 'name_Mahindra':
             brand_array = brand_array + [0,0,1,0,0,0,0]
-        elif car_brand == 'Tata':
+        elif car_brand == 'name_Tata':
             brand_array = brand_array + [0,0,0,1,0,0,0]
-        elif car_brand == 'Honda':
+        elif car_brand == 'name_Honda':
             brand_array = brand_array + [0,0,0,0,1,0,0]
-        elif car_brand == 'Ford':
+        elif car_brand == 'name_Ford':
             brand_array = brand_array + [0,0,0,0,0,1,0]
-        elif car_brand == 'Toyota':
+        elif car_brand == 'name_Toyota':
             brand_array = brand_array + [0,0,0,0,0,0,1]
                     
          
