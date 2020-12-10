@@ -6,7 +6,7 @@
 • If you want to view the deployed model, click on the following link:<br />
 Deployed at: _https://car---price--prediction.herokuapp.com/_
 
-• The web App is used to predict the price of the smartphone based on the specification and the brand selected.
+• The web App is used to predict the price of the car based on the features and the brand selected.
 
 
  ![GIF](readme_resources/car_price_prediction.gif)
